@@ -22,7 +22,7 @@ describe("Signup Page Functionality", () => {
 
   it("checks the 'Log In' link navigates to the login page", () => {
     cy.contains("Log In") 
-      .should("have.attr", "href", "./login/")
+      .should("href", "./login/")
       .click(); 
 
     // Assert that the URL has changed to the login page
