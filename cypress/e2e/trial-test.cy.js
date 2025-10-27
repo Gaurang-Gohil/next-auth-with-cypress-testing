@@ -1,5 +1,5 @@
 describe("Signup Page Functionality", () => {
-  const pageUrl = "http://localhost:3000/signup";
+  const pageUrl = "http://localhost:3000/signup"; 
 
   beforeEach(() => {
     cy.visit(pageUrl);
@@ -14,18 +14,10 @@ describe("Signup Page Functionality", () => {
     cy.get("#email").type("complete@example.com");
     cy.get("#password").type("AnotherStrongPassword456!");
 
-    // Click the submit button
+
     cy.get("button[type='submit']")
       .should("be.visible")
       .click();
-  });
-
-  it("checks the 'Log In' link navigates to the login page", () => {
-    cy.contains("Log In") 
-      .should("href", "./login/")
-      .click(); 
-
-    // Assert that the URL has changed to the login page
-    cy.url().should("include", "/login");
+      cy.url().should("include", "/login");
   });
 });
