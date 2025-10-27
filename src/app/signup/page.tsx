@@ -59,7 +59,7 @@ export default function SignupPage() {
 
             <div className="link-sigin text-2xl  flex justify-center mt-6 gap-2">
                 <span>Already have an account?</span> 
-                <a href="./login/"><span className="hover:text-blue-600 hover:underline"> Sign In</span></a> 
+                <a href="./login/"><span className="hover:text-blue-600 hover:underline">Log In</span></a> 
             </div>
         </div>
     )
