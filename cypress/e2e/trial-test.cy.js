@@ -1,5 +1,5 @@
 describe("Signup Page Functionality", () => {
-  const pageUrl = "http://localhost:3000/signup"; // Assuming your signup page is at /signup
+  const pageUrl = "http://localhost:3000/signup";
 
   beforeEach(() => {
     cy.visit(pageUrl);
